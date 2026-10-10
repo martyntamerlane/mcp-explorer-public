@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The README badge (P-8, 2026-10-09): the one image the README form's
+     Markdown line points at, served from this app's own origin so a server
+     author's README makes no third-party request.
+
+     Hardcoded colours, which the app's own rule forbids in a stylesheet and
+     cannot help here: this file is rendered by GitHub, where no custom property
+     of ours exists. One pair instead of a `prefers-color-scheme` rule (which
+     the favicon in index.html can use, being rendered by the browser we are
+     talking to): ink #171b26 behind light ink #e8ebf4 — the app's own two ink
+     values — reads on GitHub's light and dark themes alike.
+
+     The lens mark is the favicon's small cut, kept in step with Lens.tsx and
+     index.html, fitted by a nested viewBox rather than by arithmetic.
+
+     `textLength` pins the words to the width whatever font GitHub's reader
+     has, as a badge must: the box cannot grow to fit a wider face. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="20" viewBox="0 0 170 20" role="img" aria-label="Try it in your browser">
+  <rect width="170" height="20" rx="4" fill="#171b26"/>
+  <svg x="4" y="3" width="12" height="14" viewBox="13 1 22 42" fill="none" stroke="#e8ebf4" stroke-width="3.6" stroke-linecap="round">
+    <g transform="translate(8 0)">
+      <path d="M16 2V12"/>
+      <circle cx="16" cy="19" r="7.5"/>
+      <path d="M12 26 6 42"/>
+      <path d="M16 27V42"/>
+      <path d="M20 26 26 42"/>
+    </g>
+  </svg>
+  <text x="20" y="14" textLength="142" lengthAdjust="spacingAndGlyphs" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#e8ebf4">Try it in your browser</text>
+</svg>
